@@ -40,7 +40,6 @@
 		72395015237DC56600227299 = {
 			isa = PBXGroup;
 			children = (
-				72395033237DC6AF00227299 /* TableViewController.swift */,
 				72395020237DC56600227299 /* notesApp */,
 				7239501F237DC56600227299 /* Products */,
 			);
@@ -57,6 +56,7 @@
 		72395020237DC56600227299 /* notesApp */ = {
 			isa = PBXGroup;
 			children = (
+				72395033237DC6AF00227299 /* TableViewController.swift */,
 				72395021237DC56600227299 /* AppDelegate.swift */,
 				72395025237DC56600227299 /* Main.storyboard */,
 				72395035237DC6DD00227299 /* ViewController.swift */,
