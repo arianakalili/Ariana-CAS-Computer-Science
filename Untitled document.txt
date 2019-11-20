@@ -1,0 +1,22 @@
+﻿Show Table View
+* Delete all storyboard items & corresponding view controller swift files
+* Add a TableViewController
+* Set the TableViewController as the initialView
+* Create a new cocoa touch class that extends UITableViewController
+* Link the classes in your storyboard
+* Table View Data
+* Set number of sections
+* Set number of rows
+* Configure cell
+* Add the cell reuse identifier
+Show View After View
+* Add a ViewController
+* Embed the TableViewController in a Navigation Controller
+* Create a new cocoa touch class that extends UIViewController
+* Create a show segue from the table cell
+* Create outlets to your text view, button, or other storyboard objects.
+Pass Data
+* Create a variable in your view controller class to hold whatever is passed from the row in the table
+* Modify the prepare for segue method by casting the destination view controller as the name of your custom class
+* Pass a reference to your variable
+* Do whatever you need to with your variable in the custom View Controller class.
