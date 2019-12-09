@@ -33,7 +33,7 @@ class ViewController: UIViewController {
             
             myLabel.text = "Hi my name is \(name)!"
             myLabel2.text = message
-            myLabel3.text = "I've applied to \(colleges.joined(separator: ", ")) so far."
+            myLabel3.text = "I've applied to \(colleges.joined(separator: ", ")) so far. (Update: I got in to Stanford!)"
         }
         // This just puts the file contents (unparsed) into the label.
         /*  if let string = jsonFileString {
