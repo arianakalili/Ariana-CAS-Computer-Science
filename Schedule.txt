@@ -1,0 +1,31 @@
+﻿Ariana Kalili 
+Schedule Saver Questions
+With your classmates, answer the following questions:
+* Where does the saved schedule data live in the phone?        
+Document director 
+   * What is the name of the file?
+schedule.json
+   * What is the format of the file?
+json
+      * What kind of class does ScheduleItem define?
+It defines a json serializable class
+         * What protocol does the class have?
+A Codable protocol
+            * What function loads the saved data?
+The load function
+               * What is it named, and what file is it defined in?
+Its defined in viewController.swift
+               * What user action triggers it to be called? In other words, where in the program is it used?
+Opening the app because its called in the View Did Load
+               * Is this a "safe" function? In other words, could it cause the program to crash when it's called?
+It is a safe function, it won’t crash.
+               * What does it do if the save file doesn't exist?
+It returns nil.
+               * What happens in the application (not just in this function) if there is no save file?
+It loads the default data.
+                  * What function saves the user's entered data?
+The save function.
+                     * What is it named, and what file is it defined in?
+It is defined in the editItemViewController.swift
+                     * What user action triggers it to be called? In other words, where in the program is it used?
+When they close out of the app because its defined in the viewWillDisappear function.
