@@ -24,6 +24,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let existingNum = try? String(contentsOf:getFileURL())
+        label.text = "\(existingNum ?? "0")"
+        
+        if existingNum != nil {
+            let myNum = existingNum!
+              try! savedNum = Int(myNum) ?? 0
+        }
+        
     }
 
     @IBAction func didPressNumber(_ sender: UIButton) {
@@ -58,9 +66,16 @@ class ViewController: UIViewController {
         }
         currentMode = .not_set
         labelString = "\(savedNum)"
+        let num = "\(savedNum)"
+        try? FileManager.default.removeItem(at: getFileURL())
+        try! num.write(to: getFileURL(), atomically: true, encoding: .utf8)
         updateText()
         lastButtonWasMode = true
-        
+    }
+    
+    func getFileURL() -> URL {
+        let documentURL = try! FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        return documentURL.appendingPathComponent("savedNumber.txt")
     }
     
     @IBAction func didPressPlus(_ sender: Any) {
@@ -77,13 +92,14 @@ class ViewController: UIViewController {
         labelString = ""
         changeMode(newMode : .multiplication)
     }
+    
     @IBAction func didPressClear(_ sender: Any) {
         labelString = "0"
         currentMode = .not_set
         savedNum = 0
         lastButtonWasMode = false
         label.text = "0"
-    
+        try? FileManager.default.removeItem(at: getFileURL())
     }
     
     func updateText(){
