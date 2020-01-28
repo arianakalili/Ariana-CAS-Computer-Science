@@ -1,0 +1,6 @@
+Originally I wanted to create an menu creator that would allow you to store the food you order from each restaurant so that when you are picking what to eat you can randomly choose an order and a place.
+I decided to switch the project because I've been wanting to imporve my calculator ever since we made it.
+The calculator needed to:
+Continue to work after the equals sign has been pressed. (Before my code didn't allow you to keep working after the equals sign was pressed).
+Save the data that was calculated and load it when you reopen the app.
+Clear/Forget the data when the C button is pressed.
