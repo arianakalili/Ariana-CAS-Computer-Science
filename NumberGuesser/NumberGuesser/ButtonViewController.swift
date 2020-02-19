@@ -16,48 +16,60 @@ class ButtonViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
-        let randomInt = Int.random(in: 1...50)
+        let randomInt = Int.random(in: 1...buttonNum!)
         (1...buttonNum!).map({(i) -> UIButton in
             let newButton = UIButton()
-            newButton.setTitle("Button \(i)", for: .normal)
+            newButton.setTitle("\(i)", for: .normal)
             newButton.setTitleColor(UIColor(displayP3Red: 1, green: 0, blue: 0, alpha: 1), for: .normal)
             newButton.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
             stackView.addArrangedSubview(newButton)
-        
-            if i < randomInt {
-                showAlert(title: "Too Low")
-            }
             
+           
             if i > randomInt {
-                showAlert(title: "Too High")
-                
+                  newButton.addTarget(self, action: #selector(tooHigh), for: .touchUpInside)
             }
-            
             if i == randomInt {
-                showAlert(title: "Yay, you guessed the right number!")
-                          
+                  newButton.addTarget(self, action: #selector(correct), for: .touchUpInside)
             }
+          if i < randomInt {
+                          newButton.addTarget(self, action: #selector(tooLow), for: .touchUpInside)
+                    }
+            
             
             return newButton
-      
+            
         })
              
+
+        
         stackView.frame = CGRect(x: 0, y: 0, width: 200, height: 1500)
         
         scrollView.contentSize = CGSize(width: 200, height: 1500)
-    
-
+        
+        
     }
-  
-    @objc func showAlert(title: String){
-          let alert = UIAlertController(title: " ", message: title, preferredStyle: .alert)
-           alert.addAction(UIAlertAction (title: "OK", style: .default, handler: { (_) in return}))
-           self.present(alert, animated: true, completion: {} )
-           
-       }
+    
+  @objc func tooLow(){
+               let alert = UIAlertController(title: "Sorry, too low.", message: title, preferredStyle: .alert)
+                alert.addAction(UIAlertAction (title: "OK", style: .default, handler: { (_) in return}))
+                self.present(alert, animated: true, completion: {} )
+            }
+    
+    @objc func tooHigh(){
+                  let alert = UIAlertController(title: "Sorry, too high.", message: title, preferredStyle: .alert)
+                   alert.addAction(UIAlertAction (title: "OK", style: .default, handler: { (_) in return}))
+                   self.present(alert, animated: true, completion: {} )
+               }
+    
+    @objc func correct(){
+                  let alert = UIAlertController(title: "That's Correct!", message: title, preferredStyle: .alert)
+                   alert.addAction(UIAlertAction (title: "OK", style: .default, handler: { (_) in return}))
+                   self.present(alert, animated: true, completion: {} )
+               }
+    
     
 
     /*
@@ -69,5 +81,4 @@ class ButtonViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
