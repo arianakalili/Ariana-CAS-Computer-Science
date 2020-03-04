@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoTaker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rc6-ge-Iri">
+                                <rect key="frame" x="1" y="44" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Cb9-MF-01i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHv-H4-a4Y"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pIw-YG-R7b">
+                                <rect key="frame" x="1" y="194" width="414" height="668"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rc6-ge-Iri" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="1" id="038-hF-mWj"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="1E6-ck-mzs"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="width" secondItem="rc6-ge-Iri" secondAttribute="width" id="2T8-r2-0e7"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="9Lf-Gf-aSF"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="top" secondItem="rc6-ge-Iri" secondAttribute="bottom" constant="1" id="Bfe-QQ-x40"/>
+                            <constraint firstItem="rc6-ge-Iri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="1" id="G5f-27-ldW"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="top" secondItem="rc6-ge-Iri" secondAttribute="bottom" id="d4j-94-6tw"/>
+                            <constraint firstItem="rc6-ge-Iri" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="doz-aJ-2uU"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="top" secondItem="rc6-ge-Iri" secondAttribute="bottom" id="eb7-i3-Arm"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="1" id="pYO-WC-Mqm"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="width" secondItem="rc6-ge-Iri" secondAttribute="width" id="poN-r1-bkV"/>
+                            <constraint firstItem="pIw-YG-R7b" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tZe-Pw-2k6"/>
+                            <constraint firstItem="rc6-ge-Iri" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="1" id="vBD-FU-tUu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="pIw-YG-R7b" id="6LE-BO-av8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-41" y="104"/>
+        </scene>
+    </scenes>
+</document>

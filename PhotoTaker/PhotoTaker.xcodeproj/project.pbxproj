@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		720C5A1523F30D5600811B6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C5A1423F30D5600811B6C /* AppDelegate.swift */; };
-		720C5A1723F30D5600811B6C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C5A1623F30D5600811B6C /* SceneDelegate.swift */; };
-		720C5A1923F30D5600811B6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C5A1823F30D5600811B6C /* ViewController.swift */; };
-		720C5A1C23F30D5600811B6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720C5A1A23F30D5600811B6C /* Main.storyboard */; };
-		720C5A1E23F30D5700811B6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 720C5A1D23F30D5700811B6C /* Assets.xcassets */; };
-		720C5A2123F30D5700811B6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 720C5A1F23F30D5700811B6C /* LaunchScreen.storyboard */; };
-		720C5A2923F3112A00811B6C /* NamedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720C5A2823F3112A00811B6C /* NamedButton.swift */; };
-		725A399623F4766B001D5B17 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725A399523F4766B001D5B17 /* ButtonViewController.swift */; };
+		72D4A60423FEFBFD00D01F9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A60323FEFBFD00D01F9D /* AppDelegate.swift */; };
+		72D4A60623FEFBFD00D01F9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A60523FEFBFD00D01F9D /* SceneDelegate.swift */; };
+		72D4A60823FEFBFD00D01F9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D4A60723FEFBFD00D01F9D /* ViewController.swift */; };
+		72D4A60B23FEFBFD00D01F9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D4A60923FEFBFD00D01F9D /* Main.storyboard */; };
+		72D4A60D23FEFBFE00D01F9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D4A60C23FEFBFE00D01F9D /* Assets.xcassets */; };
+		72D4A61023FEFBFE00D01F9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72D4A60E23FEFBFE00D01F9D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		720C5A1123F30D5600811B6C /* NumberGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumberGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		720C5A1423F30D5600811B6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		720C5A1623F30D5600811B6C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		720C5A1823F30D5600811B6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		720C5A1B23F30D5600811B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		720C5A1D23F30D5700811B6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		720C5A2023F30D5700811B6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		720C5A2223F30D5700811B6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		720C5A2823F3112A00811B6C /* NamedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamedButton.swift; sourceTree = "<group>"; };
-		725A399523F4766B001D5B17 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		72D4A60023FEFBFD00D01F9D /* PhotoTaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoTaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D4A60323FEFBFD00D01F9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		72D4A60523FEFBFD00D01F9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		72D4A60723FEFBFD00D01F9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72D4A60A23FEFBFD00D01F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		72D4A60C23FEFBFE00D01F9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		72D4A60F23FEFBFE00D01F9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		72D4A61123FEFBFE00D01F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		720C5A0E23F30D5600811B6C /* Frameworks */ = {
+		72D4A5FD23FEFBFD00D01F9D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,74 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		720C5A0823F30D5600811B6C = {
+		72D4A5F723FEFBFD00D01F9D = {
 			isa = PBXGroup;
 			children = (
-				720C5A1323F30D5600811B6C /* NumberGuesser */,
-				720C5A1223F30D5600811B6C /* Products */,
+				72D4A60223FEFBFD00D01F9D /* PhotoTaker */,
+				72D4A60123FEFBFD00D01F9D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		720C5A1223F30D5600811B6C /* Products */ = {
+		72D4A60123FEFBFD00D01F9D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				720C5A1123F30D5600811B6C /* NumberGuesser.app */,
+				72D4A60023FEFBFD00D01F9D /* PhotoTaker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		720C5A1323F30D5600811B6C /* NumberGuesser */ = {
+		72D4A60223FEFBFD00D01F9D /* PhotoTaker */ = {
 			isa = PBXGroup;
 			children = (
-				720C5A1423F30D5600811B6C /* AppDelegate.swift */,
-				720C5A1623F30D5600811B6C /* SceneDelegate.swift */,
-				720C5A1823F30D5600811B6C /* ViewController.swift */,
-				725A399523F4766B001D5B17 /* ButtonViewController.swift */,
-				720C5A2823F3112A00811B6C /* NamedButton.swift */,
-				720C5A1A23F30D5600811B6C /* Main.storyboard */,
-				720C5A1D23F30D5700811B6C /* Assets.xcassets */,
-				720C5A1F23F30D5700811B6C /* LaunchScreen.storyboard */,
-				720C5A2223F30D5700811B6C /* Info.plist */,
+				72D4A60323FEFBFD00D01F9D /* AppDelegate.swift */,
+				72D4A60523FEFBFD00D01F9D /* SceneDelegate.swift */,
+				72D4A60723FEFBFD00D01F9D /* ViewController.swift */,
+				72D4A60923FEFBFD00D01F9D /* Main.storyboard */,
+				72D4A60C23FEFBFE00D01F9D /* Assets.xcassets */,
+				72D4A60E23FEFBFE00D01F9D /* LaunchScreen.storyboard */,
+				72D4A61123FEFBFE00D01F9D /* Info.plist */,
 			);
-			path = NumberGuesser;
+			path = PhotoTaker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		720C5A1023F30D5600811B6C /* NumberGuesser */ = {
+		72D4A5FF23FEFBFD00D01F9D /* PhotoTaker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 720C5A2523F30D5700811B6C /* Build configuration list for PBXNativeTarget "NumberGuesser" */;
+			buildConfigurationList = 72D4A61423FEFBFE00D01F9D /* Build configuration list for PBXNativeTarget "PhotoTaker" */;
 			buildPhases = (
-				720C5A0D23F30D5600811B6C /* Sources */,
-				720C5A0E23F30D5600811B6C /* Frameworks */,
-				720C5A0F23F30D5600811B6C /* Resources */,
+				72D4A5FC23FEFBFD00D01F9D /* Sources */,
+				72D4A5FD23FEFBFD00D01F9D /* Frameworks */,
+				72D4A5FE23FEFBFD00D01F9D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NumberGuesser;
-			productName = NumberGuesser;
-			productReference = 720C5A1123F30D5600811B6C /* NumberGuesser.app */;
+			name = PhotoTaker;
+			productName = PhotoTaker;
+			productReference = 72D4A60023FEFBFD00D01F9D /* PhotoTaker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		720C5A0923F30D5600811B6C /* Project object */ = {
+		72D4A5F823FEFBFD00D01F9D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Ariana Kalili";
 				TargetAttributes = {
-					720C5A1023F30D5600811B6C = {
+					72D4A5FF23FEFBFD00D01F9D = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
 			};
-			buildConfigurationList = 720C5A0C23F30D5600811B6C /* Build configuration list for PBXProject "NumberGuesser" */;
+			buildConfigurationList = 72D4A5FB23FEFBFD00D01F9D /* Build configuration list for PBXProject "PhotoTaker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,57 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 720C5A0823F30D5600811B6C;
-			productRefGroup = 720C5A1223F30D5600811B6C /* Products */;
+			mainGroup = 72D4A5F723FEFBFD00D01F9D;
+			productRefGroup = 72D4A60123FEFBFD00D01F9D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				720C5A1023F30D5600811B6C /* NumberGuesser */,
+				72D4A5FF23FEFBFD00D01F9D /* PhotoTaker */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		720C5A0F23F30D5600811B6C /* Resources */ = {
+		72D4A5FE23FEFBFD00D01F9D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720C5A2123F30D5700811B6C /* LaunchScreen.storyboard in Resources */,
-				720C5A1E23F30D5700811B6C /* Assets.xcassets in Resources */,
-				720C5A1C23F30D5600811B6C /* Main.storyboard in Resources */,
+				72D4A61023FEFBFE00D01F9D /* LaunchScreen.storyboard in Resources */,
+				72D4A60D23FEFBFE00D01F9D /* Assets.xcassets in Resources */,
+				72D4A60B23FEFBFD00D01F9D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		720C5A0D23F30D5600811B6C /* Sources */ = {
+		72D4A5FC23FEFBFD00D01F9D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				720C5A1923F30D5600811B6C /* ViewController.swift in Sources */,
-				720C5A2923F3112A00811B6C /* NamedButton.swift in Sources */,
-				720C5A1523F30D5600811B6C /* AppDelegate.swift in Sources */,
-				725A399623F4766B001D5B17 /* ButtonViewController.swift in Sources */,
-				720C5A1723F30D5600811B6C /* SceneDelegate.swift in Sources */,
+				72D4A60823FEFBFD00D01F9D /* ViewController.swift in Sources */,
+				72D4A60423FEFBFD00D01F9D /* AppDelegate.swift in Sources */,
+				72D4A60623FEFBFD00D01F9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		720C5A1A23F30D5600811B6C /* Main.storyboard */ = {
+		72D4A60923FEFBFD00D01F9D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				720C5A1B23F30D5600811B6C /* Base */,
+				72D4A60A23FEFBFD00D01F9D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		720C5A1F23F30D5700811B6C /* LaunchScreen.storyboard */ = {
+		72D4A60E23FEFBFE00D01F9D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				720C5A2023F30D5700811B6C /* Base */,
+				72D4A60F23FEFBFE00D01F9D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		720C5A2323F30D5700811B6C /* Debug */ = {
+		72D4A61223FEFBFE00D01F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		720C5A2423F30D5700811B6C /* Release */ = {
+		72D4A61323FEFBFE00D01F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -288,36 +280,36 @@
 			};
 			name = Release;
 		};
-		720C5A2623F30D5700811B6C /* Debug */ = {
+		72D4A61523FEFBFE00D01F9D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BTMGYV7W34;
-				INFOPLIST_FILE = NumberGuesser/Info.plist;
+				INFOPLIST_FILE = PhotoTaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arianakalili.NumberGuesser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arianakalili.PhotoTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		720C5A2723F30D5700811B6C /* Release */ = {
+		72D4A61623FEFBFE00D01F9D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BTMGYV7W34;
-				INFOPLIST_FILE = NumberGuesser/Info.plist;
+				INFOPLIST_FILE = PhotoTaker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arianakalili.NumberGuesser;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arianakalili.PhotoTaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -327,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		720C5A0C23F30D5600811B6C /* Build configuration list for PBXProject "NumberGuesser" */ = {
+		72D4A5FB23FEFBFD00D01F9D /* Build configuration list for PBXProject "PhotoTaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				720C5A2323F30D5700811B6C /* Debug */,
-				720C5A2423F30D5700811B6C /* Release */,
+				72D4A61223FEFBFE00D01F9D /* Debug */,
+				72D4A61323FEFBFE00D01F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		720C5A2523F30D5700811B6C /* Build configuration list for PBXNativeTarget "NumberGuesser" */ = {
+		72D4A61423FEFBFE00D01F9D /* Build configuration list for PBXNativeTarget "PhotoTaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				720C5A2623F30D5700811B6C /* Debug */,
-				720C5A2723F30D5700811B6C /* Release */,
+				72D4A61523FEFBFE00D01F9D /* Debug */,
+				72D4A61623FEFBFE00D01F9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 720C5A0923F30D5600811B6C /* Project object */;
+	rootObject = 72D4A5F823FEFBFD00D01F9D /* Project object */;
 }
