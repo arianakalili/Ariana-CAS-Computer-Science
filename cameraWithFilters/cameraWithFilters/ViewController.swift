@@ -27,7 +27,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         if let filter = CIFilter(name: "CISepiaTone") {
             let beginImage = CIImage(image: inputImage)
             filter.setDefaults()
-            image.setValue(beginImage, forKey: kCIInputImageKey)
+            filter.setValue(beginImage, forKey: kCIInputImageKey)
             if let output = filter.outputImage{
                 if let cgimg = context.createCGImage(output,from: output.extent){
                     let processedImage = UIImage(cgImage: cgimg)
