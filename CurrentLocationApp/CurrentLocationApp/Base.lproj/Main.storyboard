@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrentLocationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ttz-IU-uUH">
+                                <rect key="frame" x="0.0" y="125" width="414" height="621"/>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZk-VE-VA8">
+                                <rect key="frame" x="0.0" y="760" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fbI-at-nyk"/>
+                                    <barButtonItem title="Zoom In" id="6fH-CF-6NS">
+                                        <connections>
+                                            <action selector="zoomIn:" destination="BYZ-38-t0r" id="Xco-zM-8eK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uPj-PB-uLD"/>
+                                    <barButtonItem id="mTI-Iv-DQK"/>
+                                    <barButtonItem title="Zoom Out" id="i3C-I3-UIO">
+                                        <connections>
+                                            <action selector="zoomOut:" destination="BYZ-38-t0r" id="zvY-H9-4gE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="N9V-f3-bxf"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaU-DF-2aZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Nd4-0g-vbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzW-fD-WiQ">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AXc-Lx-99P"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Sq6-YN-4jf"/>
+                                    <barButtonItem title="Find Me" id="7IZ-2T-16f">
+                                        <connections>
+                                            <action selector="findMe:" destination="BYZ-38-t0r" id="5ee-BY-wjU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="lpu-yp-Sv4"/>
+                                    <barButtonItem title="Find Crossroads" width="66" id="hHW-p4-Hwr">
+                                        <connections>
+                                            <action selector="findCrossroads:" destination="BYZ-38-t0r" id="yyP-Pb-Rg7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cjU-9h-wSw"/>
+                                    <barButtonItem title=" Distance" id="5gP-Vp-yrA">
+                                        <connections>
+                                            <action selector="findDistance:" destination="BYZ-38-t0r" id="343-Gh-Tlr"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="c4L-bW-6m1"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="03m-Yj-cb5"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="top" secondItem="TaU-DF-2aZ" secondAttribute="bottom" id="06w-wL-FAQ"/>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2GB-cl-oaO"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Kl-XM-QxR"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="leading" secondItem="Ttz-IU-uUH" secondAttribute="leading" id="90A-rY-EdS"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="top" secondItem="cZk-VE-VA8" secondAttribute="bottom" constant="14" id="CTl-lo-ENh"/>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="top" secondItem="Ttz-IU-uUH" secondAttribute="bottom" constant="14" id="IEB-LP-pxu"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="trailing" secondItem="Ttz-IU-uUH" secondAttribute="trailing" id="J4c-Ey-3HB"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="top" secondItem="TaU-DF-2aZ" secondAttribute="bottom" constant="20" id="JwE-8g-IfJ"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LZh-v7-TPx"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NiM-gX-2hZ"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P2w-7n-64q"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TdP-0g-CDI"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X49-GN-Dai"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aKp-7U-29a"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="apN-cD-RxT"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="top" secondItem="cZk-VE-VA8" secondAttribute="bottom" id="jcm-wc-3cW"/>
+                            <constraint firstItem="TaU-DF-2aZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qPp-U8-S2p"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="leading" secondItem="cZk-VE-VA8" secondAttribute="leading" id="rKh-cY-Jvh"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rRE-er-DFH"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="reX-c1-ces"/>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="leading" secondItem="ZzW-fD-WiQ" secondAttribute="leading" id="ryo-Ju-H7J"/>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="trailing" secondItem="ZzW-fD-WiQ" secondAttribute="trailing" id="vJr-uq-Ugt"/>
+                            <constraint firstItem="Ttz-IU-uUH" firstAttribute="trailing" secondItem="cZk-VE-VA8" secondAttribute="trailing" id="xDS-cR-GyS"/>
+                            <constraint firstItem="ZzW-fD-WiQ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yKj-fr-QBV"/>
+                            <constraint firstItem="cZk-VE-VA8" firstAttribute="top" secondItem="Ttz-IU-uUH" secondAttribute="bottom" id="zbd-uJ-L51"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapLabel" destination="TaU-DF-2aZ" id="aYu-AO-c6K"/>
+                        <outlet property="mapView" destination="Ttz-IU-uUH" id="LEU-kY-0iM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
