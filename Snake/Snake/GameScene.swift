@@ -158,6 +158,25 @@ class GameScene: SKScene {
         playButton.position = CGPoint(x: 0, y: (frame.size.height / -2) + 200)
         playButton.fillColor = SKColor.cyan
         
+        
+        let v1 = CGPoint(x: 0, y: 62.5)
+        let v2 = CGPoint(x: 12.5, y: 25)
+        let v3 = CGPoint(x: 50, y: 25)
+        let v4 = CGPoint(x: 25, y: 0)
+        let v5 = CGPoint(x: 37.5, y: -37.5)
+        let v6 = CGPoint(x: 0, y: -12.5)
+        let v7 = CGPoint(x: -37.5, y: -37.5)
+        let v8 = CGPoint(x: -25, y: 0)
+        let v9 = CGPoint(x: -50, y: 25)
+        let v10 = CGPoint(x: -12.5, y: 25)
+        let path = CGMutablePath()
+        path.addLines(between: [v1, v2, v3, v4, v5, v6, v7, v8, v9, v10])
+        playButton.path = path
+        self.addChild(playButton)
+
+
+         
+        /*
         let topCorner = CGPoint(x: -50, y: 50)
         let bottomCorner = CGPoint(x: -50, y: -50)
         let middle = CGPoint(x: 50, y: 0)
@@ -165,6 +184,7 @@ class GameScene: SKScene {
         path.addLines(between: [topCorner, bottomCorner, middle])
         playButton.path = path
         self.addChild(playButton)
+        */
     }
     
     override func update(_ currentTime: TimeInterval) {

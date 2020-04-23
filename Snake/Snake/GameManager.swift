@@ -11,7 +11,7 @@ import SpriteKit
 class GameManager {
     var scene: GameScene!
     var nextTime: Double?
-    var timeExtension: Double = 0.15
+    var timeExtension: Double = 0.43
     var playerDirection: Int = 1
     var currentScore: Int = 0
     
@@ -20,6 +20,7 @@ class GameManager {
     }
     func initGame() {
         //starting player position
+        timeExtension = 0.41
         scene.playerPositions.append((10, 10))
         scene.playerPositions.append((10, 11))
         scene.playerPositions.append((10, 12))
@@ -119,6 +120,12 @@ class GameManager {
                 scene.playerPositions.append(scene.playerPositions.last!)
                 scene.playerPositions.append(scene.playerPositions.last!)
                 scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                scene.playerPositions.append(scene.playerPositions.last!)
+                if timeExtension >= 0.08 {
+                      timeExtension -= 0.05
+                      print(timeExtension)
+                }
             }
         }
     }
